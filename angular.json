@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "poem-app"
+    }
+  },
+  "defaultProject": "poem-app",
+  "cli": {
+    "analytics": false
+  }
 }
