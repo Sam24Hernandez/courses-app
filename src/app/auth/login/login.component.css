@@ -1,0 +1,72 @@
+.login-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.login-box {
+  width: 360px;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 0.9rem;
+}
+
+.login-logo a {
+  display: block;
+}
+
+.logo_login {
+  font-size: 2.1rem;
+  height: 53px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.logo_login span {
+  display: inline-block;
+  font-size: 2.1rem;
+  color: #ffffff;
+  border-radius: 5px;
+  background: #000000;
+  line-height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 3px;
+  text-transform: none;
+}
+
+.card {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.login-card-body {
+  background: #fff;
+  border-top: 0;
+  color: #666;
+  padding: 20px;
+}
+
+.login-box-msg {
+  margin: 0;
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+.forgot_psw {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.register_link {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}

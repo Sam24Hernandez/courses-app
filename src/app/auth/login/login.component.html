@@ -1,0 +1,72 @@
+<section class="hold-transition login-page">
+  <div class="login-box">
+    <div class="login-logo">
+      <a routerLink="/home">
+        <div class="logo_login"><span>Poiesis</span>web</div>
+      </a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Entra para compartir contenido.</p>
+
+        <form action="#" method="post">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Email" />
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fa fa-envelope"></span>
+              </div>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Contraseña"
+            />
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fa fa-lock"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <div class="icheck-primary">
+                <input type="checkbox" id="remember" />
+                <label for="remember"> Recuerdáme </label>
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-4">
+              <button type="submit" class="btn btn-primary btn-block">
+                Iniciar
+              </button>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
+
+        <div class="social-auth-links text-center mb-3">
+          <p>-- Ó --</p>
+          <a href="#" class="btn btn-block btn-danger">
+            <i class="fa fa-google-plus mr-2"></i> Inicia sesión con Google
+          </a>
+        </div>
+        <!-- /.social-auth-links -->
+
+        <span class="mb-1">
+          <a class="forgot_psw" href="#">¿Olvidaste tu contraseña?</a>
+        </span>
+        <br />
+        <span class="mb-0">
+          <a class="register_link text-center" routerLink="/register"
+            >¿Eres nuevo?, únete a la comunidad.</a
+          >
+        </span>
+      </div>
+      <!-- /.login-card-body -->
+    </div>
+  </div>
+</section>

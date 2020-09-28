@@ -1,0 +1,39 @@
+<!-- Main content -->
+<section class="content">
+  <div class="error-page">
+    <h2 class="headline text-warning">404</h2>
+
+    <div class="error-content">
+      <h3>
+        <i class="fa fa-exclamation-triangle text-warning"></i> Oops! Página no
+        encontrada.
+      </h3>
+
+      <span>
+        No pudimos encontrar la página que buscabas. Mientras tanto, puedes
+        <a routerLink="/home"> volver al inicio </a> o intenta utilizar el
+        formulario de búsqueda, espero encuentres lo que buscas.
+      </span>
+
+      <form class="search-form">
+        <div class="input-group">
+          <input
+            type="text"
+            name="search"
+            class="form-control"
+            placeholder="Buscar publicaciones"
+          />
+
+          <div class="input-group-append">
+            <button type="submit" name="submit" class="btn btn-warning">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <!-- /.input-group -->
+      </form>
+    </div>
+    <!-- /.error-content -->
+  </div>
+  <!-- /.error-page -->
+</section>

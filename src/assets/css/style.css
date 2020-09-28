@@ -9,12 +9,11 @@
 3. Header
 4. Menu
 5. Home
-6. Intro
+6. Introduction
 7. Featured
-8. Technology
-9. World
-10. Sidebar
-11. Footer
+8. Poems
+9. Sidebar
+10. Footer
 
 
 ******************************/
@@ -244,14 +243,14 @@ section {
 .section_bar {
   width: 100%;
   height: 26px;
-  background: #ebeded;
+  background: #a51c30;
   margin-top: 1px;
 }
-.cat_technology {
+.cat_poem {
   background: #624693 !important;
 }
 .cat_world {
-  background: #61e49b !important;
+  background: #a51c30 !important;
 }
 .cat_video {
   background: #ff4b75 !important;
@@ -259,7 +258,7 @@ section {
 .cat_party {
   background: #f8a64f !important;
 }
-.cat_technology a,
+.cat_poem a,
 .cat_world a,
 .cat_video a,
 .cat_party a {
@@ -827,10 +826,65 @@ section {
 .home {
   width: 100%;
 }
+.home_common {
+  width: 100%;
+  height: 215px;
+}
+.home_common::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  content: "";
+  background: rgba(147, 70, 93, 0.7);
+  z-index: 10;
+}
+.home_common::before {
+  top: 0;
+  height: 61px;
+}
+.home_content_title {
+  font-size: 36px;
+  color: #ffffff;
+  line-height: 0.75;
+}
+.breadcrumbs {
+  margin-top: 9px;
+}
+.breadcrumbs ul li:not(:last-child)::after {
+  display: inline-block;
+  content: "/";
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.breadcrumbs ul li,
+.breadcrumbs ul li a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.71);
+}
+.breadcrumbs ul li a {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.breadcrumbs ul li a:hover {
+  color: #61e49b;
+}
 .home_slider_container {
   width: 100%;
   height: 797px;
   background: #fff0c9;
+}
+.home_content_container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.home_content {
+  padding-bottom: 50px;
 }
 .home_slider_container::before,
 .home_slider_container::after {
@@ -942,7 +996,7 @@ section {
 }
 
 /*********************************
-6. Intro
+6. Introduction
 *********************************/
 
 .intro {
@@ -1017,7 +1071,7 @@ section {
   background: #fff0c9;
 }
 .main_content {
-  padding-top: 95px;
+  padding-top: 45px;
 }
 .post_item {
   width: 100%;
@@ -1026,7 +1080,8 @@ section {
   margin-bottom: 41px;
 }
 .post_h_large:not(:last-child) {
-  margin-bottom: 66px;
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #a51c30;
 }
 .post_image {
   width: 100%;
@@ -1182,18 +1237,22 @@ section {
 }
 
 /*********************************
-8. Technology
+8. Poem
 *********************************/
-
-.technology {
-  margin-top: 95px;
+.poem {
+  border: 2px solid #a51c30;
 }
-.technology_content {
-  margin-top: 96px;
+
+.poem_content {
+  height: 200px;
+  min-height: 790px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /*********************************
-10. Sidebar
+9. Sidebar
 *********************************/
 
 .sidebar {
@@ -1276,8 +1335,8 @@ section {
 }
 .sidebar_extra_container {
   width: 100%;
-  height: 352px;
-  margin-top: 53px;
+  height: 520px;
+  margin-top: 33px;
 }
 .sidebar_extra_content {
   position: absolute;
@@ -1303,61 +1362,9 @@ section {
 .sidebar_latest {
   margin-top: 57px;
 }
-.latest_posts {
-  margin-top: 58px;
-}
-.latest_post:not(:last-child) {
-  margin-bottom: 26px;
-}
-.latest_post_image {
-  width: 103px;
-  height: 103px;
-}
-.latest_post_image img {
-  max-width: 100%;
-}
-.latest_post_content {
-  padding-left: 22px;
-}
-.post_category_small {
-  display: inline-block;
-  height: 22px;
-}
-.post_category_small a {
-  display: block;
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding-left: 8px;
-  padding-right: 10px;
-  line-height: 22px;
-  letter-spacing: 0.35em;
-  margin-right: -0.35em;
-}
-.latest_post_title {
-}
-.latest_post_title a {
-  font-size: 16px;
-  color: #000000;
-  line-height: 1.1;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease;
-}
-.latest_post_title a:hover {
-  opacity: 0.8;
-}
-.latest_post_date {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  color: #878787;
-  margin-top: 10px;
-}
 
 /*********************************
-11. Footer
+10. Footer
 *********************************/
 
 .footer {
@@ -1438,7 +1445,7 @@ section {
 }
 .footer_nav_list li a {
   font-size: 16px;
-  color: #a51c30;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-transition: all 200ms ease;
@@ -1452,8 +1459,48 @@ section {
 }
 .copyright {
   margin-top: 43px;
+  font-family: "Mulish", sans-serif;
   font-size: 13px;
-  color: #6e6e6e;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.copyright i {
+  color: #f8a64f;
+  font-size: 15px;
+}
+
+.copyright a {
+  color: #a51c30;
+}
+
+/*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  /* display: none; */
+  right: 15px;
+  bottom: 15px;
+  z-index: 995;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  color: #a51c30;
+  transition: all 0.4s;
+  border: 2px solid #a51c30;
+}
+
+.back-to-top i:hover {
+  background: #a51c30;
+  color: #fff;
 }
 
 /* Responsive Web Design / Media Query*/
